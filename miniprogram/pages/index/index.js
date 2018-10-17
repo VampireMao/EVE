@@ -22,7 +22,7 @@ Page({
         if (res.data.MessageType == 0) {
           var application = getApp();
           application.globalData.itemData = JSON.parse(res.data.Message);
-          wx.redirectTo({
+          wx.navigateTo({
             url: "../itemD/itemD",
           });
         }
