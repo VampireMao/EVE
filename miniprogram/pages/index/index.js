@@ -19,7 +19,13 @@ Page({
         name: that.data.itemValue
       },
       success(res) {
-        console.log(res.data);
+        if (res.data.MessageType == 0) {
+          var application = getApp();
+          application.globalData.itemData = JSON.parse(res.data.Message);
+          wx.redirectTo({
+            url: "../itemD/itemD",
+          });
+        }
       },
     });
 

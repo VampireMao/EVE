@@ -2,10 +2,10 @@
 <view id="container">
   <view class='weui-cell weui-cell_vcode'>
     <view class='weui-cell__bd'>
-      <input class="weui-input" type="number" bindinput="onInput" placeholder="物品名称" />
+      <input class="weui-input" type="text" bindinput="onInput" placeholder="请输入游戏物品名称进行查询" />
     </view>
     <view class="weui-cell__ft">
-      <view class="weui-vcode-btn" bindtap='getItem'>搜索</view>
+      <view class="weui-vcode-btn" bindtap='getItem'>查询</view>
     </view>
   </view>
 </view>
