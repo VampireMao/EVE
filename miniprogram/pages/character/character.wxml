@@ -1,0 +1,40 @@
+<!--pages/character/character.wxml-->
+<view class="page__bd">
+  <view class="weui-form-preview">
+    <view class="weui-form-preview__hd">
+      <view class="weui-form-preview__item">
+        <image src="{{character.Actor}}" style="width: 50px; height: 50px; display: block" />
+      </view>
+    </view>
+    <view class="weui-form-preview__bd">
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">名字</view>
+        <view class="weui-form-preview__value">{{character.Name}}</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">击毁</view>
+        <view class="weui-form-preview__value">{{character.ShipsDestroyed}}</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">损失</view>
+        <view class="weui-form-preview__value">{{character.ShipsLost}}</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">总计</view>
+        <view class="weui-form-preview__value">{{character.ShipsDestroyed+character.ShipsLost}}</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">击毁ISK</view>
+        <view class="weui-form-preview__value">{{character.MoneyDestroyed}}</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">损失ISK</view>
+        <view class="weui-form-preview__value">{{character.MoneyLost}}</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">危险系数</view>
+        <view class="weui-form-preview__value">{{character.DangerRatio}}%</view>
+      </view>
+    </view>
+  </view>
+</view>

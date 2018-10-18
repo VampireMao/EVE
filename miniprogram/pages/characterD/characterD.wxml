@@ -1,2 +1,13 @@
 <!--pages/characterD/characterD.wxml-->
-<text>pages/characterD/characterD.wxml</text>
+<view wx:for="{{characterData}}" wx:for-item="item">
+  <view class="weui-cell weui-cell_access" data-character="{{item}}" bindtap="characterD">
+    <view class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+      <image src="{{item.Actor}}" style="width: 50px; height: 50px; display: block" />
+    </view>
+    <view class="weui-cell__bd">
+      <view>{{item.Name}}</view>
+      <view style="font-size: 13px;color: #888888;">危险系数：{{item.DangerRatio}}%</view>
+    </view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+</view>

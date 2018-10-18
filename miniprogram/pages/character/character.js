@@ -1,11 +1,11 @@
-// pages/characterD/characterD.js
+// pages/character/character.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    characterData: ''
+    character: ''
   },
 
   /**
@@ -15,15 +15,7 @@ Page({
     var applation = getApp();
 
     this.setData({
-      characterData: applation.globalData.characterData
-    });
-  },
-
-  characterD: function(e) {    
-    var application = getApp();
-    application.globalData.character = e.currentTarget.dataset.character;
-    wx.navigateTo({
-      url: "../character/character",
+      character: applation.globalData.character
     });
   },
 
