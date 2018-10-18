@@ -1,11 +1,11 @@
-// pages/itemD/itemD.js
+// pages/characterD/characterD.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    itemData: null
+    characterData: ''
   },
 
   /**
@@ -15,8 +15,10 @@ Page({
     var applation = getApp();
 
     this.setData({
-      itemData: applation.globalData.itemData
+      characterData: applation.globalData.characterData
     });
+
+    console.log(this.data.characterData[0]);
   },
 
   /**

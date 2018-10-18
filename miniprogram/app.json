@@ -3,6 +3,7 @@
   "pages": [
     "pages/index/index",
     "pages/itemD/itemD",
+    "pages/characterD/characterD",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
